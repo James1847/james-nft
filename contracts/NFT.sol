@@ -6,7 +6,7 @@ contract NFT is ERC721 {
   uint public nextTokenId;
   address public admin;
 
-  constructor() ERC721('My NFT', 'NFT') {
+  constructor() ERC721('James NFT', 'NFT') {
     admin = msg.sender;
   }
 
@@ -17,7 +17,7 @@ contract NFT is ERC721 {
   }
 
   function _baseURI() internal view override returns (string memory) {
-    return '';
+    return 'https://james-nft.herokuapp.com/api/tokens/';
   }
 
 }
