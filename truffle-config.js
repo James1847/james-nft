@@ -63,15 +63,16 @@ module.exports = {
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
     rinkeby: {
-      networkCheckTimeout: 10000,
+
       provider: () => new HDWalletProvider(
         mnemonic, 
-        'https://rinkeby.infura.io/v3/c146b106d81b4db0be5d7422a8cf5100',
+        'https://rinkeby.infura.io/v3/0e874294d0c24625a4aaf471fb868c47',
         0,
         1
       ),
       network_id: 4, //rinkeby
-      skipDryRun: true
+      skipDryRun: true,
+      networkCheckTimeout: 999999
     },
     // Useful for private networks
     // private: {
