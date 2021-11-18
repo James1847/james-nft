@@ -1,5 +1,5 @@
 const HDWalletProvider = require('@truffle/hdwallet-provider');
-const mnemonic = '';
+const mnemonic = 'zero staff caution enlist unique dizzy canoe soul great faint direct anxiety';
 
 /**
  * Use this file to configure your truffle project. It's seeded with some
@@ -37,7 +37,7 @@ module.exports = {
    *
    * $ truffle test --network <network-name>
    */
-  contracts_build_directory: './frontend/src/contracts',
+  contracts_build_directory: './contracts',
 
   networks: {
     // Useful for testing. The `development` name is special - truffle uses it by default
@@ -63,9 +63,10 @@ module.exports = {
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
     rinkeby: {
+      networkCheckTimeout: 10000,
       provider: () => new HDWalletProvider(
         mnemonic, 
-        'rinkeby url',
+        'https://rinkeby.infura.io/v3/c146b106d81b4db0be5d7422a8cf5100',
         0,
         1
       ),
