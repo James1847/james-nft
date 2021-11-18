@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import getBlockchain from './ethereum.js';
+import getBlockchain from '../ethereum.js';
 import axios from 'axios';
 
 function App() {
