@@ -13,6 +13,7 @@
     "@openzeppelin/contracts": "^4.3.3",
     "@truffle/hdwallet-provider": "^1.6.0",
     "axios": "^0.24.0",
+    "cors": "^2.8.5",
     "ethers": "^5.5.1",
     "next": "12.0.2",
     "react": "17.0.2",
