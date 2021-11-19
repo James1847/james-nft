@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import getBlockchain from '../ethereum.js';
 import axios from 'axios';
+import Image from "next/image.js"
 
 function App() {
   const [tokenInfo, setTokenInfo] = useState(undefined);
@@ -31,7 +32,7 @@ function App() {
             <h1 className='text-center'>{tokenInfo.name}</h1>
             <div className="jumbotron">
               <p className="lead text-center">{tokenInfo.description}</p>
-              <img src={tokenInfo.image} className="img-fluid" />
+              <Image src={tokenInfo.image} className="img-fluid" alt="" />
             </div>
           </div>
         </div>
