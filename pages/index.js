@@ -10,16 +10,18 @@ function App() {
       const { nft } = await getBlockchain();
       const tokenURI = await nft.tokenURI(0);
       const { data } = await axios.get(tokenURI);
+      console.log('fetch data:', data, data.result)
       setTokenInfo(data.result);
+      console.log('tokeninfo2: ', tokenInfo)
     };
     init();
   }, []);
 
   console.log('tokeninfo: ', tokenInfo)
 
-  // if(typeof tokenInfo === 'undefined') {
-  //   return 'Loading...';
-  // }
+  if(typeof tokenInfo === 'undefined') {
+    return 'Loading...';
+  }
 
   return (
       <div className='container'>

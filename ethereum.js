@@ -1,6 +1,8 @@
 import { ethers, Contract } from 'ethers';
 import NFT from './contracts/NFT.json';
 
+getBlockchain()
+
 const getBlockchain = () =>
   new Promise((resolve, reject) => {
     window.addEventListener('load', async () => {
