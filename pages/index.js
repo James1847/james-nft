@@ -33,7 +33,7 @@ function App() {
                     <h1 className='text-center'>{tokenInfo.name}</h1>
                     <div className="jumbotron">
                         <p className="lead text-center">{tokenInfo.description}</p>
-                        <Image src="/angel.jpeg" className="img-fluid" layout='fill' alt=""/>
+                        <Image src="/angel.jpeg" className="img-fluid" width={150} height={150} alt=""/>
                     </div>
                 </div>
             </div>
