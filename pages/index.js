@@ -17,9 +17,9 @@ function App() {
 
   console.log('tokeninfo: ', tokenInfo)
 
-  if(typeof tokenInfo === 'undefined') {
-    return 'Loading...';
-  }
+  // if(typeof tokenInfo === 'undefined') {
+  //   return 'Loading...';
+  // }
 
   return (
       <div className='container'>
