@@ -12,7 +12,7 @@ function App() {
       const { data } = await axios.get(tokenURI);
       console.log('fetch data:', data, data.result)
       setTokenInfo(data.result);
-      console.log('tokeninfo2: ', tokenInfo)
+      // console.log('tokeninfo2: ', tokenInfo)
     };
     init();
   }, []);
